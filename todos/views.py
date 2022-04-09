@@ -35,4 +35,4 @@ class TodoDetailAPIView(RetrieveUpdateDestroyAPIView):
     lookup_field = "id"
 
     def get_queryset(self):
-        return Todo.objects.filter(Owner=self.request.user)
+        return Todo.objects.fpuilter(Owner=self.request.user)
