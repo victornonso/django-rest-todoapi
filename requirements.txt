@@ -25,9 +25,7 @@ requests==2.27.1
 ruamel.yaml==0.17.21
 ruamel.yaml.clib==0.2.6
 sqlparse==0.4.2
-tk==0.1.0
 tzdata==2022.1
 uritemplate==4.1.1
 urllib3==1.26.9
-waitress==2.1.1
 whitenoise==6.0.0
