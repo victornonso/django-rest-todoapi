@@ -11,10 +11,10 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 
+import django_heroku
 from pathlib import Path
 import os
-import django_heroku
-from _tkinter import *
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -153,7 +153,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+STATICFILE_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Default primary key field type

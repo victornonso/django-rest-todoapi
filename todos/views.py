@@ -1,12 +1,10 @@
-from django.shortcuts import render
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from todos.models import Todo
-
 from todos.serializers import TodoSerializer
 from rest_framework.permissions import IsAuthenticated
 from django_filters.rest_framework import DjangoFilterBackend
 from todos.pagination import CustomPageNumberPagination
-from rest_framework import permissions, filters
+from rest_framework import  filters
 
 
 # Create your views here.
